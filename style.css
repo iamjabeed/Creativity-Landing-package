@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins, Helvetica, sans-serif";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+  padding-top: 2rem;
+}
+
+nav img {
+  width: 5rem;
+}
+
+.navBar .line- {
+  width: 14rem;
+  padding-bottom: 1rem;
+  border-bottom: 1.5px solid #000;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+/* 
+.main {
+  height: 80vh;
+  width: 100vw;
+} */
+
+.left-container img {
+  height: 100vh;
+  width: 38vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.main-buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+
+  margin-right: 2rem;
+  position: relative;
+}
+
+.heading-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.heading-sec H1 {
+  font-size: 5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: grey;
+}
+
+.heading-sec H1 .sub {
+  color: #000;
+  position: absolute;
+  left: 6rem;
+  font-weight: 900;
+}
+
+.heading-sec p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(57, 55, 55);
+  position: absolute;
+  right: 15rem;
+  top: 8rem;
+}
+
+.btn-01 {
+  position: absolute;
+  top: 12rem;
+  right: 4rem;
+  padding: 5px 22px;
+  background: #000;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 12px;
+}
+
+.secondary-buttom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.secondary-buttom {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 14rem;
+}
+
+.sub-left {
+  /* border: 2px solid gold; */
+  height: 29vh;
+  width: 12vw;
+  position: absolute;
+  right: 24rem;
+}
+
+.features {
+  list-style: none;
+}
+
+.features>li {
+  font-size: 15px;
+  position: relative;
+}
+
+.features>li:before {
+  content: "\25CF";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.features>li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-left: 2px solid black;
+  margin-left: 5px;
+  height: 100%;
+}
+
+.features>li:first-of-type:after {
+  top: 50%;
+}
+
+.features>li:last-of-type:after {
+  top: -50%;
+}
+
+.sub-right h4 {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.features {
+  position: absolute;
+  top: 2rem;
+}
+
+.quotation {
+  width: 2vw;
+}
+
+.arrow {
+  height: 4rem;
+  position: absolute;
+  right: -5rem;
+  top: 6rem;
+}
+
+.buttom {
+  width: 20vw;
+  height: 24vh;
+  position: absolute;
+  right: rem;
+  margin-top: 1rem;
+}
+
+/* media-queries */
+@media screen and (max-width: 840px) {
+  .line- {
+    display: none;
+  }
+  .left-container img {
+    display: none;
+  }
+  
+  .main-buttom {
+    align-items: center;
+  }
+  .right-container {
+    width: 100%;
+    margin-right: 2rem;
+    position: relative;
+  }
+
+  .heading-sec h1 {
+    font-size: 3rem;
+    left: 2rem;
+    top: 2rem;
+  }
+  .heading-sec p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(57, 55, 55);
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+  }
+  
+  .btn-01 {
+    top: 12rem;
+    right: 5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+  }
+  
+  .social-icons img {
+    width: 20px;
+  }
+  .secondary-buttom {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 14rem;
+  }
+  
+  .features>li {
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 440px) {
+  .navBar{
+    display: none;
+  }
+  .heading-sec p {
+   display: none;
+  }
+}  
